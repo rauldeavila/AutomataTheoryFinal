@@ -1,0 +1,29 @@
+#Terminais						# The symbols and terminal section is the first one
+[ a ]							# Tudo o que estiver apos o sustenido (#) sera considerado comentario
+[ b ]							# The terminals are any sequence of characteres between brackets
+[ u ]							# Terminals section begins @ "Terminais"
+[ v ]
+#Variaveis						# Variables section begins @ "Variaveis", e is the second one in the file
+[ S ]							# It's very important to follow the section rules
+[ Z ]							# Case-sensitive Syntax
+[ B ]
+[ X ]
+[ Y ]
+[ A ]
+#Inicial						# Starter symbol has it's own section called "Inicial"
+[ S ]							# This section has only one line with [S].
+#Regras							# The last section follows "Regras" (rules)
+[ S ] > [ X ] [ Y ] [ Z ]				# The ">" symbol represents derivation.
+[ A ] > [ a ]
+[ B ] > [ b ]
+[ X ] > [ A ] [ X ] [ A ]				# The rightmost symbols are between brackets and each one separated by spaces.
+[ X ] > [ B ] [ X ] [ B ]
+[ X ] > [ Z ]
+[ X ] > [ V ]						# V is the empty word
+[ Y ] > [ A ] [ Y ] [ B ]
+[ Y ] > [ B ] [ Y ] [ A ]
+[ Y ] > [ Z ]
+[ Y ] > [ V ] 
+[ Z ] > [ Z ] [ u ] 
+[ Z ] > [ Z ] [ v ]
+[ Z ] > [ V ]
